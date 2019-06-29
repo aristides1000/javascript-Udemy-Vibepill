@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <title>Mi primera web</title>
+    </head>
+    <body>
+        <h1>Titulo de mi web</h1>
+        <h2>Bienvenidos a mi web</h2>
+        <!-- Vamos a ver las herramientas más importantes para texto a partir de este momento -->
+        <!-- cabe acotar que <h1> y <h2> son etiquetas de texto -->
+        <p>Hola que tal desde este curso</p>
+        <!-- Al colocar una etiqueca de texto automáticamente html efectúa un salto de línea -->
+        <p>Hola que tal desde este curso</p>
+        <!-- Lorem Ipsum es un generador de texto automático que genera texto de prueba para nuestras páginas web de pruba, cabe acotar que también hay lorem ipsum de imágenes -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam laoreet sodales consequat. Donec gravida dictum erat, et consectetur diam egestas quis. Aliquam finibus lacus ut efficitur ullamcorper. Suspendisse id feugiat est, non iaculis leo. Maecenas in elit vitae nunc vehicula venenatis. Aliquam ac diam nec tellus lobortis iaculis. Nulla elementum velit et turpis ornare vestibulum. Suspendisse potenti.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam laoreet sodales consequat. Donec gravida dictum erat, et consectetur diam egestas quis. Aliquam finibus lacus ut efficitur ullamcorper. Suspendisse id feugiat est, non iaculis leo. Maecenas in elit vitae nunc vehicula venenatis. <hr> Aliquam ac diam nec tellus lobortis iaculis. Nulla elementum velit et turpis ornare vestibulum. Suspendisse potenti.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam laoreet sodales consequat. Donec gravida dictum erat, et consectetur diam egestas quis. Aliquam finibus lacus ut efficitur ullamcorper. Suspendisse id feugiat est, non iaculis leo. Maecenas in elit vitae nunc vehicula venenatis. <br><br> Aliquam ac diam nec tellus lobortis iaculis. Nulla elementum velit et turpis ornare vestibulum. Suspendisse potenti.</p>
+        <!-- la etiqueta <p> quiere decir párrafo -->
+        <!-- La etiqueta <br> hace un salto de línea, puedo hacer uso de esta etiqueta varias veces --> 
+        <!-- la etiqueta <hr> hace un salto de línea y dibuja una línea en nuestra página web -->
+
+        <hr>
+            <h2>imagenes en Html</h2>
+            <!-- para meter imágenes nos valemos de la etiqueta <img> y esta etiqueta carece de contenido alguno sólo se le adjudica los atributos referentes a la ubicación de las imágenes -->
+            <h3>ejemplo de imagen con ruta absoluta</h3>
+            <img src="C:/wamp64/www/javascript-Udemy-Vibepill/imagenes/1.jpg" alt="Imagen aleatoria" title="imagen cualquiera" />
+            <!-- pendiente con wampserver al abrir este archivo, ya que al abrirlo con wampserver el atributo src="" es este src="http://localhost/javascript-Udemy-Vibepill/imagenes/1.jpg" en cambio abirto directo sin wampserver es así src="C:/wamp64/www/javascript-Udemy-Vibepill/imagenes/1.jpg" -->
+            <!-- en el atributo src="" es importante recalcar que que si usamos esta expresión "/" o esta "\" debemos usarla siempre, no debemos mezclarlas, ya que si lo hacemos nos pudiera arrojar un error -->
+            <!-- Aquí ocurrió algo interesante, en wampserver no me agarró al ruta absoluta, hay que abrir el archivo directamente en el browser -->
+
+            <h3>ejemplo de imagen con ruta relativa</h3>
+            <img src="imagenes/1.jpg" alt="Imagen aleatoria" title="imagen cualquiera" />
+            <!-- ojo, lo mejor y más recomendable siempre es usar rutas relativas y no las rutas absolutas -->
+            <!-- esta expresión "/> quiere decir que estamos cerrando una etiqueta, aunque no es necesaria colocarla" -->
+            <!-- el atributi alt="" es el texto que va a aparecer cuando l imagen no cargue es importante colocarlo a nivel de SEO -->
+            <!-- e atributo title="" hace que cada vez que nosotros coloquemos el cursor sobre la imagen nos aparezca un pequeño texto que nos diga que es esa imagen -->
+            <!-- como no hehecho referencia a la imagen me va a cargar el texto alternativo, señalado en el atributo alt="" -->
+            <!-- con el atributo src="" le indicamos la ruta donde se va a localizar el archivo o imagen que queremos ubicar -->
+            <!-- en el atributo src="" podemos incluir rutas absolutas, y las rutas relativas, las rutas absolutas son aquellas que dice exáctamente donde está el archivo desde su bicación en la raíz del sistema, y las rutas relativas siempre parten del archivo HTML desde el cual estamos partiendo -->
+            <!-- un ejemplo de "ruta absolola" sería estes src"C:/wamp64/www\javascript Udemy Vibepill\imagenes\1.jpg" y un ejemplo de "ruta relativa" sería este src="imagenes/1.jpg" -->
+            <!-- en el atributo src="" se hace uso de este término "../" y esto hace referencia a que nos echamos una carpeta arriba de la ubicación actual, hay que estar pendiene de esto para no cometer errores -->
+
+            <h3>otros atributos de la etiqueta "img"</h3>
+            <img src="imagenes/1.jpg" alt="Imagen aleatoria" title="imagen cualquiera" width="100" height="250" /> <!-- otros atributos de la etiqueta <img> son el width="" que es le ancho y el height="" que es el alto -->
+            <!-- a los atributos width="" y height="" se le puede colocar width="250px" o dejarlo simplemente así width="250" y de igual forma el lo va a tomar como pixeles -->
+            <!-- si yo sólo coloco un atributo width="" o height="", y le coloco un valor a uno de los dos por ejeplo width="450px" la imagen va a tomar una apariencia proporcional -->
+        <hr>
+
+        <!-- la etiqueta de texto <h1> siempre es una de las primeras que buscan las arañas de google, es por ello que es una de las etiquetas más importante en el trabajo de SEO y siempre se estila que en la página web sólo hay una etiqueta <h1> por estra razón -->
+
+        <h3>Tercer encabezado de la pagina</h3>
+
+        <p>Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit.</strong><!-- la etiqueta de texto <strong> me permite colocar la info en negrita --> Nam laoreet sodales consequat. Donec gravida dictum erat, et consectetur diam egestas quis.
+        
+        <blockquote>
+                Nam laoreet sodales consequat. Donec gravida dictum erat, et consectetur diam egestas quis.
+        </blockquote>
+        <!-- la etiqueta de texto <blockquote> hace que el texto sea tomado como una sita -->
+        <em>Aliquam finibus lacus ut efficitur ullamcorper.</em><!-- la etiqueta de texto <em> me permite ver lo que está encerrado en ellas con letras cursivas --> Suspendisse id feugiat est, non iaculis leo. <span> in elit vitae nunc vehicula venenatis. Aliquam ac diam nec tellus lobortis iaculis.</span id="resaltado" class="rojo amarillo"><!-- La etiqueta de texto <span> no genera ningún tipo de cambio en el texto, pero a la etiqueta span se le pueden agregar los atributos id y class para luego por css cambiarle los estilos--> Nulla elementum velit et turpis ornare vestibulum. <i> potenti.</i><!-- la etiqueta de texto <i> también nos permite transformar el texto en cursiva -->
+        </p>
+
+        <!-- estas son las etiquetas de textos más importrantes en HTML -->
+            
+        <!-- Hay dos tipos de listas en HTML las ordenadas y las desordenadas, las listas ordenadas hacen uso de las etiquetas <ol> y las listas desordenadas hacen uso de la etiqueta <ul> -->
+        
+        <h3>Listado de fruta</h3>
+        
+        <ol><!-- las listas ordenadas llevan números delante de sus elementos -->
+            <!-- para colocar cada uno de los elementos de la lista, yo debo hacer uso de la etiqueta <li> -->
+            <li>Manzana</li>
+            <li>Naranja</li>
+            <li>Pera</li>
+            <li>Sandia</li>
+        </ol>
+
+        <!-- La etiqueta <ul> hace referencia a una lista desordenada -->
+        <ul><!-- las listas ordenadas llevan números delante de sus elementos -->
+            <!-- para colocar cada uno de los elementos de la lista, yo debo hacer uso de la etiqueta <li> -->
+            <li>Manzana</li>
+            <!-- tambien entre <li> y <li> puedo meter sublistas -->
+                <ul>
+                    <li>Roja</li>
+                    <li>Verde</li>
+                </ul>
+            <li>Naranja</li>
+            <li>Pera</li>
+            <li>Sandia</li>
+        </ul>
+        <!-- la principal diferencia entre la etiqueta <ol> de la etiqueta <ul> radica en el hecho de que es que la <ol> le coloca numerítos a sus elementos al frente ordenados y la etiqueta <ul> le coloca sólo punticos delante sin ningún tipo de relación entre ellos -->
+
+        <h3>tablas</h3>
+        <table border="1"> <!-- con el atributo border le digo a mi tabla que dibuje un borde a la tabla -->
+            <!-- étiqueta básica de una tabla -->
+            <tr><!-- etiqueta de una fila -->
+                <th>Nombre</th> <!-- <th> etiqueta para designar columnas y pinta la información que contiene en negrita por lo general se usa para las cabeceras de las tablas además de ello centra la información contenida en ellos -->
+                <th>Apellidos</th>
+                <th>País</th>
+            </tr>
+            <tr>
+                <td>Arístides</td><!-- <td> etiqueta para designar columnas -->
+                <td colspan="2">Molina</td> <!-- el atributo colspan lo que hace es que expande el tamaño de la columna dependiendo el valor que le coloquemos, por ejemplo colspan="2" lo que hace es que la columna en lugar de tener un espacio normal va a ocupar 2 espacios, si es colspan="3" va a proceder a ocupar 3 espacios cabe acotar que va a expandir dependiendo del tamaño total de la tabla -->
+                <td>Venezuela</td>
+            </tr>
+            <tr>
+                <td>Juanito</td>
+                <td>alimaña</td>
+                <td>Colombia</td>
+            </tr>
+        </table>
+    </body>
+</html>
