@@ -67,6 +67,42 @@
 
         <!-- para crear un formulario en Html se debe hacer uso de la etiqueta <form> -->
 
+        <form><!-- con el atributo action="" de la etiqueta <form>, le decimos a php a dónde va a ir la información del formulario, con el atributo method="" nos dice que tipo de método de envío vamos a utilizar, sea el caso de post o de get -->
+            <!-- vamos a meter cada uno de los inputs de los label en una etiqueta parrafo o etiqueta <p> para que nos le coloque de forma automática un salto de linea -->
+            <p>
+                <label for="nombre">Nombre</label><!-- con el atributo for y el atributo name, le decimos que si coinciden ambas etiquetas, tanto el label como el input se encuentran relacionadas -->
+                <input type="text" name="nombre" placeholder="Escribe tu nombre..."><!-- con el atributo placeholder le decimos que escriba algo dentro del input a manera de info, y que apenas escribamos algo desaparezca esa info, dando paso a lo que nosotros escribamos -->
+            </p>
+
+            <!-- tambien se tienen otros tipos de campos, como lo son las siguientes a continuación -->
+            
+            <p>
+                <label for="descripcion">Descripcion</label>
+                <textarea name="descripcion"></textarea><!-- dentro del atributo name no podemos colocar caractéres especiales, como lo son los acentos y la letra ñ, lo mismo sucede en consecuencia con el atributo for="" -->
+            </p>
+
+            <p>
+                <input type="radio" name="genero" value="hombre">Hombre <!-- el atributo value en los radio buttons son los que debemos cambiar para que podamos hacer diferentes selecciones --> <br>
+                <input type="radio" name="genero" value="mujer">Mujer  <br>
+                <input type="radio" name="genero" value="nada">Nada  <br>
+            </p>
+
+            <!-- otro campo que puede tener un formulario es el de tipo <select> -->
+            <p>
+                <select name="generodos"><!-- la etiqueta select también lleva un atributo name="" -->
+                    <option value="hombre">Hombre</option><!-- en los selectores también se coloca un value, que debe ser distinto en cada caso -->
+                    <option value="mujer">Mujer</option>
+                    <option value="nada">Nada</option>
+                </select>
+            </p>
+
+            <!-- por último vamos a ver cómo agregar un botón para enviar los datos que acabamos de ingresar -->
+            <p>
+                <input type="submit" value="enviar formulario"><!-- la etiqueta <input> con el atributo type="submit" es la etiqueta que funge como botón que al darle clic envía los datos que estén dentro del formulario -->
+                <!-- si le damos click al botón enviar nos va a poner por url la info que le pasamos y nos la va a colocar en la barra de direcciones o la barra url -->
+            </p>
+        </form>
+
         <h3>Listado de fruta</h3>
         
         <ol><!-- las listas ordenadas llevan números delante de sus elementos -->
