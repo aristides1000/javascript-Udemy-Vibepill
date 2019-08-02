@@ -52,3 +52,14 @@ console.log(numero_entero+7);
 /* si yo quiero que un número sea un string tengo que anteponerle a la variable o al número la palabra reservada String como se muestra acontinuación */
 
 console.log(String(numero_entero)+7);
+
+/* Ahora bien supongamos que queremos saber el tipo de dato que he creado con antelación, bueno para ello existe un operador que se llama "Typeof", un ejemplo de ello lo veremos a continuación */
+
+/* la forma de usar el Typeof es la siguiente */
+
+console.log(typeof numero_entero);
+console.log(typeof cadena_texto);
+console.log(typeof verdadero_o_falso);
+console.log(typeof numero_falso);
+
+/* Al hacer esto vemos el tipo de dato que nos devuelve y nos lo devuelve por consola */
